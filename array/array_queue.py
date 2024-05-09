@@ -1,11 +1,23 @@
 class Queue:
     def __init__(self):
         self.items = []
-        self.j = 0
-        self.n = 0
 
-    def add(self, item):
-        self.items[(self.j + self.n) % len(self.items)] = item
+    def is_empty(self):
+        return self.items == []
 
-        self.n += 1
+    def enqueue(self, item):
+        self.items.append(item)
+
+    def dequeue(self):
+        if self.is_empty():
+            raise ValueError("A fila está vazia")
+        return self.items.pop(0)
+
+    def size(self):
+        return len(self.items)
+
+    def peek(self):
+        if self.is_empty():
+            raise ValueError("A fila está vazia")
+        return self.items[0]
 

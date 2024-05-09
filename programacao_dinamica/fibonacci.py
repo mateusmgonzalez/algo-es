@@ -1,4 +1,3 @@
-
 def fibonacci(n):
     if n <= 0:
         return 0
@@ -9,6 +8,7 @@ def fibonacci(n):
         f.append(-1)
 
     return fibonacci_topdown(n, f)
+
 
 def fibonacci_topdown(n, f):
     if f[n] == -1:
@@ -22,8 +22,8 @@ def fibonacci_old(n):
 
     return fibonacci_old(n - 1) + fibonacci_old(n - 2)
 
+
 if __name__ == '__main__':
     print(fibonacci(10))
-
 
     print(fibonacci_old(10))

@@ -1,6 +1,4 @@
-
-
-
+#
 class ArrayStack:
     def __init__(self):
         self.items = []
@@ -30,4 +28,3 @@ class ArrayStack:
     # def resize(self):
     #     b = max(1, 2 * self.size)
     #     for i in range(b):
-

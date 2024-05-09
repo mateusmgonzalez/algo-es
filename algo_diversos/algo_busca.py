@@ -1,7 +1,4 @@
 
-
-
-
 def busca_linear(arr, v):
     for i in range(len(arr)):
         if arr[i] == v:
